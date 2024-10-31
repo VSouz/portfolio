@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Cursive';
+  src: url('fonts/Cursive.ttf') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontSemi';
+  src: url('fonts/Walkway_UltraBold.ttf') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Prime';
+  src: url('fonts/Prime-Regular.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525; 
+    color: white;
+    border: 0;
+    flex-direction: column;
+    
+}
+.home-meio{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20%;
+  gap: 65%;
+  font-family: 'Prime';
+}
+
+.nav-bar{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 30;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 10%;
+    margin-right: 15%;
+    background-color: #252525;
+}
+.nav-item{
+  color: aliceblue;
+    padding: 0 15px; /* Espaçamento horizontal */
+    font-size: 1.5rem;
+    font-family: 'Prime', sans-serif;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parallax {
+    background-image: url('eu2.png');  
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.marquee-container {
+    width: 100%;          /* Largura total da tela */
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Estilo do texto que vai rolar */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; /* Remove o espaçamento inicial */
+    font-style: normal;
+    font-family: 'MontSemi', sans-serif;
+    font-size: 15.5rem;
+    animation: marquee 10s linear infinite; /* Ajuste para uma animação linear */
+}
+.marquee2 {
+  /* color: aqua; */
+  display: inline-block;
+  position:absolute;
+  overflow: hidden;
+  top: 0;
+  white-space: nowrap;
+  padding-left: 100%;
+  font-style: normal;
+  font-family: 'MontSemi', sans-serif;
+  font-size: 15.5rem;
+  animation: marquee 10s linear infinite;
+  animation-delay: 5s;
+}
+
+/* Animação do texto rolando */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#parte2{
+  height: 40vh;
+  font-family: 'Prime', sans-serif;
+  padding: 5% 10% 10%;
+}
+
+#parte3{
+  font-family: 'Prime', sans-serif;
+  padding: 5%; 
+}
+
+
+.CardProjeto{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: #252525;
+}
+
+.Ctitulo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2%;
+}
+.Cmeio{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2% 3% 3%;
+  gap: 5%;
+  font-size: large;
+
+}
+.Cfoto{
+  
+  background-size: cover;
+  width: 50%;
+  height: 25vh;
+  border-radius: 5%;
+}
+.Cdescricao{
+ width: 50%;
+ text-align: justify;
+ /* padding: 2%; */ 
+}
+
+.Cfim{
+  padding: 2%;
+}
+
+.tec{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  padding: 2%;
+}
+
+.tec-item{
+  width: 50px;
+    height: 50px;
+  background-image: url("js.png");
+  background-size: cover;
+  background-color: #999999;
+  size: 20px;
+  border-radius: 50%;
+}
+
+#parte4{
+  height: 50vh;
+  font-family: 'Prime', sans-serif;
+  padding: 5% 10% 10%;
+}
+
