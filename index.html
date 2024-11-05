@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="portfolio.js"></script>
 </head>
 <body>
     <nav >
         <ul class="nav-bar">
-            <li class="nav-item">Sobre</li>
-            <li class="nav-item">Projetos</li>
-            <li class="nav-item">Contato</li>
+            <a href="#sobre">
+
+                <li class="nav-item">Sobre </li>
+            </a>
+            <a href="#parte3">
+
+                <li class="nav-item">Projetos</li>
+            </a>
+            <a href="#parte4">
+                
+                <li class="nav-item">Contato</li>
+            </a>
         </ul>
     </nav>
     <div class="inicial">
@@ -56,7 +67,10 @@
                         <div class="tec-item" style="background-image: url(css.png)"></div>
                         <div class="tec-item"></div>
                     </div>
-                    <div class="git"></div>
+                    <div class="git">
+                        <button class="git-buttom" onclick="window.open('https://vocabulo-blush.vercel.app/', '_blank')"><i class="fa-solid fa-arrow-up-right-from-square"></i>  Ver Site</button>
+                        <button class="git-buttom" onclick="window.open('https://github.com/VSouz/Vocabulo', '_blank')"><i class="fa-brands fa-github"></i>  Ver Projeto</button>
+                    </div>
                 </div>
             </div>
             <div class="CardProjeto">
@@ -73,7 +87,10 @@
                         <div class="tec-item"  style="background-image: url(css.png)"></div>
                         
                     </div>
-                    <div class="git"></div>
+                    <div class="git">
+                        <button class="git-buttom" onclick="window.open('https://github.com/VSouz/Cafeteria', '_blank')"><i class="fa-brands fa-github"></i>  Ver Projeto</button>
+
+                    </div>
                 </div>
             </div>
             <div class="CardProjeto">
@@ -89,7 +106,10 @@
                         
                         
                     </div>
-                    <div class="git"></div>
+                    <div class="git">
+                        <button class="git-buttom" onclick="window.open('https://github.com/VSouz/Epic-Fight', '_blank')"><i class="fa-brands fa-github"></i>  Ver Projeto</button>
+
+                    </div>
                 </div>
             </div>
             <div class="CardProjeto">
@@ -108,14 +128,31 @@
                         <div class="tec-item"  style="background-image: url(css.png)"></div>
                         
                     </div>
-                    <div class="git"></div>
+                    <div class="git">
+                        <button class="git-buttom" onclick="window.open('https://github.com/VSouz/ytsave', '_blank')"><i class="fa-brands fa-github"></i>  Ver Projeto</button>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="parte4">
         <div>
-            <h1>Contato</h1>
+            <h1 >Contato</h1>
+            <div class='final-card'> 
+                
+                    <div class="contato" style="display: flex; flex-direction: row;justify-content: center; align-items: center; padding: 10%; gap: 10%; position: relative; overflow: hidden;">
+                        
+                        <buttom class="contato-item" style="background-image: url(e-mail.png);" onclick="enviarEmail()"></buttom>
+                        <buttom class="contato-item" style="background-image: url(whatsapp.png);" onclick="enviarWhatsApp()"></buttom>
+                        <div class="contato-item" style="background-image: url(linkedin.png); "></div>
+                        <div class="contato-item" style="background-image: url(instagram.png); " onclick="window.open('https://www.instagram.com/vsouza_s', '_blank')"></div>
+                        <div id="p1"></div>
+                        <div id="p2"></div>
+                        <div id="p3"></div>
+                        <div id="p4"></div>
+                    </div>
+            </div>
         </div>
     </div>
 </body>

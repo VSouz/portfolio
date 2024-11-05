@@ -149,6 +149,19 @@ body{
   background-color: #252525;
 }
 
+.CardProjeto:hover{
+    padding: 20px;
+    border-radius: 15px;
+    color: #252525;
+    background: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px); /* Efeito de desfoque para simular o gelo */
+    -webkit-backdrop-filter: blur(8px); /* Compatibilidade para Safari */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda sutil para realçar o efeito */
+
+}
+
+
 .Ctitulo {
   display: flex;
   width: 100%;
@@ -175,10 +188,13 @@ body{
  width: 50%;
  text-align: justify;
  /* padding: 2%; */ 
+ padding-right: 2%;
 }
 
 .Cfim{
   padding: 2%;
+  display: flex;
+  flex-direction: row;
 }
 
 .tec{
@@ -199,9 +215,139 @@ body{
   border-radius: 50%;
 }
 
+.git{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: end;
+  padding: 0% 2% 2% 0% ;
+  gap: 12%;
+}
+
+.git-buttom{
+  font-size: 15px;
+  width: 30%;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: #f0f1ff;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.git-buttom:active {
+  transform: scale(0.95); 
+  background-color: #3f98fd; 
+  border: none;
+}
+
 #parte4{
-  height: 50vh;
+  height: 80vh;
+  color: #252525;
   font-family: 'Prime', sans-serif;
+  /* background-color: #252525; */
   padding: 5% 10% 10%;
 }
 
+.contato-item{
+  width: 140px; 
+  height: 100px; 
+  /* background-color: #f0f1ff; */
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  border-radius: 100%; 
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.final-card{
+  position: relative;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+}
+
+.contato-item:hover{
+  transform: scale(1.1); 
+
+}
+
+#p1{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0),rgb(21, 255, 0));
+  animation: contatoAnime1 2s  linear infinite;
+  
+}
+#p2{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0),rgba(21, 255, 0, 1));
+  animation: contatoAnime2 2s linear infinite;
+  animation-delay: 1s;
+  
+
+}
+#p3{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0),rgba(21, 255, 0, 1));
+  animation: contatoAnime3 2s linear infinite;
+}
+#p4{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0),rgba(21, 255, 0, 1));
+  animation: contatoAnime4 2s  linear infinite;
+  animation-delay: 1s;
+  
+}
+
+@keyframes contatoAnime1 {
+    0%{
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(100%);
+      
+    }
+}
+@keyframes contatoAnime2 {
+    0%{
+      
+      transform: translatey(-100%);
+    }
+    100%{
+      transform: translatey(100%);
+      
+    }
+}
+@keyframes contatoAnime3 {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+      
+    }
+}
+@keyframes contatoAnime4 {
+    0%{
+      transform: translatey(100%);
+    }
+    100%{
+      transform: translatey(-100%);
+      
+    }
+}
